@@ -1,6 +1,7 @@
 package com.steelhouse.audience.model;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,6 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Data
+@ToString
 @Table(name = "oracle_categories")
 public class OracleCategories {
 
