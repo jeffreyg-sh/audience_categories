@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    test-on-borrow: true
+    validation-query: select 1
+    max-age: 1800000
+    max-active: 100
+    max-idle: 10
+    url: jdbc:postgresql://integration-qa.crvrygavls2u.us-west-2.rds.amazonaws.com:5432/qacoredb
+    password: steelhouseint31#07#18
+    username: steelhousecore
+  jpa:
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults: false
